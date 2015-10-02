@@ -16,7 +16,7 @@ class CompressorTest {
                 byte[] test = new byte[300000];
 		Random myRND = new Random();
 		for (int i = 0; i < test.length; i++) {
-			test[i] = (byte) (myRND.nextInt() & 0x44);
+			test[i] = (byte) (myRND.nextInt() & 0x44 );
 		}
 
 		byte[] compd = Compressor.compress(test);
