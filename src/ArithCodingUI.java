@@ -150,7 +150,7 @@ public class ArithCodingUI extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -173,8 +173,7 @@ public class ArithCodingUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel7))
         );
 
         pack();
@@ -186,7 +185,7 @@ public class ArithCodingUI extends javax.swing.JFrame {
     loadFile.setApproveButtonText("Select File");
     loadFile.setAcceptAllFileFilterUsed(false);
     FileNameExtensionFilter f1 = new FileNameExtensionFilter("Text Files", "txt", "text","rtf","doc","docx");
-    //loadFile.setFileFilter(f1);
+    loadFile.setFileFilter(f1);
     inlen=0.0;
     outlen=0.0;
     int i=0,k=0;
